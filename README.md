@@ -10,6 +10,16 @@ This is intended to facilitate the collection of BACnet functions in a format fo
 
 3. Place key files into directory if you wish to use docker or modify code as needed to reference your keys. By default the keys look in the source directory
 
+4. Update Google IoT parameters as needed for the device
+
+```python
+# Google IoT Core device variables
+
+project_id = '' # Google Project Name
+registry_id = '' # Google IoT Registry Name
+iot_device_id = '' # Google IoT Core Device
+```
+
 ## Create Registry and Devices
 
 [Google IoT Core Registry and Devices](https://cloud.google.com/iot/docs/how-tos/devices)
@@ -29,6 +39,8 @@ pyjwt==1.6.0
 netifaces==0.10.6
 ```
 
-BACpypes BACnet package [BACpypes](https://github.com/JoelBender/bacpypes)
-Google Packages for IoT [Google API Docs](https://google-cloud-python.readthedocs.io/en/latest/index.html)
+BACpypes BACnet package [BACpypes](https://github.com/JoelBender/bacpypes).
+
+Google Packages for IoT [Google API Docs](https://google-cloud-python.readthedocs.io/en/latest/index.html).
+
 Paho MQTT Python Driver [Paho MQTT Python](https://github.com/eclipse/paho.mqtt.python)
