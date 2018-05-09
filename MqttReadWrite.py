@@ -36,9 +36,10 @@ from bacpypes.app import BIPSimpleApplication
 from bacpypes.local.device import LocalDeviceObject
 
 # Google IoT Core device variables
-project_id = ''
-registry_id = ''
-iot_device_id = ''
+
+project_id = '' # Google Project Name
+registry_id = '' # Google IoT Registry Name
+iot_device_id = '' # Google IoT Core Device
 
 # Unique client ID to address the configuration consumption and publishes
 iot_client_id = 'projects/{}/locations/us-central1/registries/{}/devices/{}'.format(project_id, registry_id, iot_device_id)

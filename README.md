@@ -2,6 +2,8 @@
 
 This is intended to facilitate the collection of BACnet functions in a format for use with the Google IoT Core toolkit [Google IoT Core](https://cloud.google.com/iot-core/)
 
+The configuration is consumed from the Google IoT device configuration file in JSON format. This should enable the necessary descriptors to become available to the device for each point. The configuration is updated on every read interval (Defaults to 60s).
+
 ## Getting Started
 
 1. Download the Google CA for signing the JWT Token [Google Root PEM](https://pki.goog/roots.pem)
@@ -25,6 +27,13 @@ iot_device_id = '' # Google IoT Core Device
 [Google IoT Core Registry and Devices](https://cloud.google.com/iot/docs/how-tos/devices)
 
 Documentation to create the necessary registries and devices you will need to control the PubSub message flows and configuration updates for the BACnet Driver.
+
+## Roadmap
+
+1. Add write functionality
+2. Move to threading for each device
+3. Standardize the configuration consumption for points
+4. Allow configuration options for payload formatting
 
 ## Packages
 
